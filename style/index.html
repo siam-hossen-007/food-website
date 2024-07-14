@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        .container{
+            display: flex;
+            gap: 10px;
+            margin: 0 40px;
+        }
+        .food{
+            border: 2px solid rgb(16, 134, 45);
+            border-radius: 16px;
+            padding: 10px;
+        }
+        .food img{
+            width: 100%;
+        }
+    
+    
+        .food h3{
+            display: flex;
+            align-items: center;
+            color: rgb(218, 102, 13);
+        }
+       
+       @media screen and (max-width: 576px) {
+        .container{
+            flex-direction: column-reverse;
+            background-color: blanchedalmond;
+            border-radius: 18px;
+        }
+        }
+        .food h1{
+            color: brown;
+        }
+        .food img{
+            border-radius: 18px;
+        }
+
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div class="food">
+                <img src="../images/food.webp" alt="">
+                <h1>food item - 1</h1>
+                <p>Price : $100</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, at.</p>
+                <a>Buy Now</a>
+            </div>
+            <div class="food">
+                <img src="../images/food.webp" alt="">
+                <h1>food item - 2</h1>
+                <p>Price : $100</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, at.</p>
+                <a>Buy Now</a>
+            </div>
+            
+        </div>
+
+    
+</body>
+</html>
